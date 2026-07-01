@@ -1,0 +1,31 @@
+{
+    "name": "forticore",
+    "version": "1.0.0",
+    "description": "FortiCore - Solidity Smart Contract with JS Tooling",
+    "bin": {
+        "forticore-cli": "./scripts/cli.js"
+    },
+    "scripts": {
+        "compile": "hardhat compile",
+        "test": "hardhat test",
+        "coverage": "hardhat coverage",
+        "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+        "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+        "interact": "hardhat run scripts/interact.js",
+        "api": "node scripts/api-server.js",
+        "cli": "node scripts/cli.js",
+        "node": "hardhat node"
+    },
+    "dependencies": {
+        "commander": "^11.1.0",
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+        "@openzeppelin/contracts": "^5.0.0",
+        "dotenv": "^16.3.1",
+        "hardhat": "^2.19.0"
+    },
+    "author": "holilayet",
+    "license": "MIT"
+}
